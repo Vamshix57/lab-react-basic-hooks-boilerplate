@@ -2,9 +2,12 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+import ParentContext from './components/UseContext/ParentContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <>
+  <ParentContext>
     <App />
-  </React.StrictMode>,
+    </ParentContext>
+  </>,
 )
